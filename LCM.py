@@ -1,8 +1,9 @@
-a,b = map(int,input().split())
+a , b = map(int,input().split())
 i = 1
 while True:
-    c = a * i
-    if c % b == 0:
-        print(c)
+    m = a * i
+    if m % b == 0:
+        print(m)
         break
-    i += 1
+    i = i + 1
+    
