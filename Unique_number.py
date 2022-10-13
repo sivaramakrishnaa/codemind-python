@@ -1,13 +1,13 @@
 n = int(input())
 a = []
-size = 0
+s = 0
 while n > 0:
-    size += 1
+    s +=1
     k = n % 10
     if k not in a:
         a.append(k)
     n = n //10
-if size == len(a):
+if s== len(a):
     print('Unique Number')
 else:
     print('Not Unique Number')
