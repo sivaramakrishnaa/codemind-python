@@ -1,27 +1,26 @@
-n = int(input())
+a = int(input())
 
-y = n + 1
+m = a + 1
 while 1:
-    s = str(y)
-    rev = s[::-1]
-    if int(s) == int(rev):
-        
+    u = str(m)
+    v = u[::-1]
+    if int(m) == int(v):
         break
     else:
-        y += 1
-       
-z = n - 1
-while 1:
-    t = str(z)
-    ver = t[::-1]
-    if int(t) == int(ver):    
+        m += 1
         
+n = a -1
+while 1:
+    x = str(n)
+    y = x[::-1]
+    if int(n) == int(y):
         break
     else:
-        z -= 1
-if abs(int(s) - n) < abs(int(t) - n):
-    print(int(s))
-elif abs(int(s) - n) == abs(int(t) - n):
-    print(int(t),int(s))
+        n -= 1
+        
+if abs(int(m) - a) < abs(int(n) - a):
+    print(int(m))
+elif abs(int(m) - a) == abs(int(n) - a):
+    print(int(n),int(m))
 else:
-    print(int(t))
+    print(int(n))
