@@ -1,5 +1,6 @@
 a = int(input())
 b = int(input())
+
 c = a + b
 
 s = 1
@@ -8,7 +9,7 @@ z = c + 1
 while 1:
     y = z
     isprime = True
-    for i in range(2,z):
+    for i in range(2,y):
         if y % i == 0:
             isprime = False
             break
